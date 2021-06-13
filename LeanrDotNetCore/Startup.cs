@@ -45,7 +45,7 @@ namespace LeanrDotNetCore
             }
 
             app.Run(async context => {
-                await context.Response.WriteAsync("Hello world commiting new changes");
+                await context.Response.WriteAsync("Hello world staging");
             });
 
 
