@@ -69,7 +69,7 @@ namespace LeanrDotNetCore
         async Task TerminalMiddleWare(HttpContext context)
         {
             
-            await context.Response.WriteAsync("hello world");
+            await context.Response.WriteAsync("hello world commiting new changes");
            // await next.Invoke();
         }
 
