@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - mywebappheera
+name: Build and deploy ASP.Net Core app to Azure Web App - mywebappheera(stage)
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'stage'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'mywebappheera'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_01279944619141d3970e2df5e3ef08d0 }}
+        slot-name: 'stage'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4b0c9ad1acf74e6a94a96cc28437f9a8 }}
         package: .
