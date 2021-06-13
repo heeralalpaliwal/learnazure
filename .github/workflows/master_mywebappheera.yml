@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'mywebappheera'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ce1a59e74760465a97511a0cfa758236 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_01279944619141d3970e2df5e3ef08d0 }}
         package: .
